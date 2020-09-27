@@ -42,7 +42,7 @@ const Task_5 = (props) => {
             onKeyPress={handleKeyPress}
             placeholder="message"
             >...</textarea>
-                <button onClick={onBtn} >Set</button>
+                <button onClick={onBtn} >Send</button>
             </p>
             <p> </p>
 
