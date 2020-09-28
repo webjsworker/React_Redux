@@ -5,6 +5,7 @@ import './Task_6.css'
 class Task_6 extends React.Component {
     state = {
         editMode: false,
+        status: "hello  world"
     }
     activateEditMode() {
         this.setState({
@@ -16,23 +17,37 @@ class Task_6 extends React.Component {
             editMode: false,
         });
     }
+    onStatusChange(e){
+        this.setState({
+           status: e.currentTarget.value,
+        });
+        
+    }
     render() {
         return (
             <div className='task_6'>Содержание ответа:
+            
                 {!this.state.editMode &&
-                    <div>
-                        <span onDoubleClick={this.activateEditMode.bind(this)}>{this.props.status}</span>
+                    <div > double click to change status: 
+                        <span className='status'
+                        onDoubleClick={this.activateEditMode.bind(this)}
+                        >{this.state.status}</span>
                     </div>
                 }
 
                 {this.state.editMode &&
                     <div>
-                        <input autoFocus={true} onBlur={this.deactivateEditMode.bind(this)} value={this.props.status}></input>
+                        <input 
+                        autoFocus={true}
+                         onBlur={this.deactivateEditMode.bind(this)} 
+                         value={this.state.status}
+                         onChange={this.onStatusChange.bind(this)}
+                         ></input>
                     </div>
                 }
 
 
-                <p>Ответ</p>
+                
             </div>
         )
     }
