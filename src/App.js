@@ -58,7 +58,9 @@ const App = (props) => {
         setZero={props.setZero}
       />
       <div> <item className='item'> {task_6}</item> {question_6} </div>
-      <Task_6/>
+      <Task_6
+      status={"Hello"}
+      />
     </div>
 
   )
