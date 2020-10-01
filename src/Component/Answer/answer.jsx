@@ -14,3 +14,5 @@ export let question_5 = 'Работа с TextArea. Управляемый ком
 export let task_5 = 'текст_задание 5 '
 export let task_6 = 'текст_задание 6 '
 export let question_6 = 'Локальный State, class component, setState.  '
+export let task_7 = 'текст_задание 7 '
+export let question_7 = 'Роут, прелоудер'
