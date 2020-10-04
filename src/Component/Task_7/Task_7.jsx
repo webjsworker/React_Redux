@@ -17,7 +17,6 @@ const Task_7 = (props) => {
 
     let timerId = setInterval(function () {
       let values = props.progress + 10
-      
       props.setProgerss(values)
       if (values > 100) {
       clearTimeout(timerId)
@@ -32,7 +31,7 @@ const Task_7 = (props) => {
 
       <details>
         <summary>  </summary>
-        <p onMouseOver={Handl}>Пожалуйста, подождите, фотографии загружаются.</p>
+        <p onMouseOver={Handl}>Навести курсор мыши на строку для начала загррузки </p>
         <progress max="100" value={props.progress}>
           Загружено на <span id="value">25</span>%
   </progress> <span>{props.progress}</span>
