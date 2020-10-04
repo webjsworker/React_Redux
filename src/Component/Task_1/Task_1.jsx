@@ -8,10 +8,14 @@ const Task_1 = (props) => { // props не используется
 
     return (
         <div className='task_1'>
-            {content}
-            <div className='Button_answer'>
+           
+            <details>
+    <summary>  </summary>
+    <p><div className='Button_answer'>
             </div>
-            <p>{answer_1}</p>
+            <p>{answer_1}</p></p>
+   </details>
+            
         </div>
     )
 }

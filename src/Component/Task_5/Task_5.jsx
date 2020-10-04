@@ -35,18 +35,19 @@ const Task_5 = (props) => {
     });
 
     return (
-        <div className='task_5'>Содержание ответа:
-            <p><textarea 
-            value={text} 
-            onChange={handleChange} 
-            onKeyPress={handleKeyPress}
-            placeholder="message"
-            >...</textarea>
-                <button onClick={onBtn} >Send</button>
-            </p>
-            <p> </p>
-
-            <p>{message}</p>
+        <div className='task_5'>
+            <details>
+                <summary></summary>
+                <p><p><textarea
+                    value={text}
+                    onChange={handleChange}
+                    onKeyPress={handleKeyPress}
+                    placeholder="message"
+                >...</textarea>
+                    <button onClick={onBtn} >Send</button>
+                </p>
+                    <p>{message}</p></p>
+            </details>
         </div>
     )
 }

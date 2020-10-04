@@ -25,9 +25,12 @@ class Task_6 extends React.Component {
     }
     render() {
         return (
-            <div className='task_6'>Содержание ответа:
-            
-                {!this.state.editMode &&
+            <div className='task_6'>
+                
+                
+                <details>
+    <summary></summary>
+    <p>{!this.state.editMode &&
                     <div > double click to change status: 
                         <span className='status'
                         onDoubleClick={this.activateEditMode.bind(this)}
@@ -45,7 +48,15 @@ class Task_6 extends React.Component {
                          ></input>
                     </div>
                 }
-
+</p>
+   </details>
+                
+                
+                
+                
+                
+            
+                
 
                 
             </div>

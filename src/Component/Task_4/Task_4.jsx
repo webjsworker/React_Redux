@@ -7,10 +7,17 @@ const Task_4 = (props) => {
         props.setCount(d)
     }
     return (
-        <div className='task_4'>Сожержание ответа: 
-            <p>Counter = {props.count_asinc} </p>
+        <div className='task_4'>
+            
+            <details>
+    <summary></summary>
+    <p><p>Counter = {props.count_asinc} </p>
             <p> <button onClick={onBtnClick}>Counter</button></p>
-            <p> {props.isFetching ? <p>Загрузка...</p> : <p>Ок</p>} </p>
+            <p> {props.isFetching ? <p>Загрузка...</p> : <p>Ок</p>} </p></p>
+   </details>
+            
+             
+            
         </div>
     )
 }

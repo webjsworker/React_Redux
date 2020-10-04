@@ -11,11 +11,14 @@ import Task_5 from './Component/Task_5/Task_5';
 import { setTime } from './Component/Action/Action'
 import { setText } from './Component/Action/Action'
 import { setWriteText } from './Component/Action/Action'
-import { question_1, task_1, question_2, task_2, task_3, question_3,
-   task_4, question_4, task_5, question_5,task_6,question_6, task_7, question_7 } from './Component/Answer/answer'
+import { question_1, task_1, question_2, task_2,
+   task_3, question_3, task_4, question_4, task_5, 
+   question_5,task_6,question_6, task_7, question_7 ,
+   content} from './Component/Answer/answer'
    import {setZero} from './Component/Action/Action'
 import Task_6 from './Component/Task_6/Task_6';
 import Task_7 from './Component/Task_7/Task_7'
+
 
 
 
@@ -24,9 +27,10 @@ const App = (props) => {
     <div className='App'>
 
       <div> <item className='item'> {task_1}</item> {question_1} </div>
-      <Task_1 />
+      <Task_1 content={content} />
       <div><item className='item'> {task_2}</item> {question_2}</div>
       <Task_2
+       content={content}
         name={props.name}
         year={props.year}
         sity={props.sity}
@@ -61,8 +65,8 @@ const App = (props) => {
       <Task_6
       status={"Hello"}
       />
-      <div><item className='item'>{task_7}</item>{question_7}  </div>
-      <Task_7/>
+      <div><item className='item'>{task_7}</item>{question_7 } </div>
+     <Task_7/>
     </div>
 
   )

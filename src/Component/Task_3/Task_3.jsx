@@ -11,9 +11,16 @@ let onBtnClick=(e)=>{
 
     return (
         <div className="task_3">
-            Содержание ответа:
-<p>Counter = {props.counter} </p>
-            <p> <button onClick={onBtnClick}>Counter</button></p>
+
+<details>
+    <summary></summary>
+    <p><p>Counter = {props.counter} </p>
+            <p> <button onClick={onBtnClick}>Counter</button></p></p>
+   </details>
+
+
+           
+
         </div>
     )
 }

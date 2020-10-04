@@ -1,10 +1,13 @@
 import React from 'react'
 import './Task_7.css'
 
-const Task_7 = (props) => { 
+const Task_7 = (props) => {
     return (
-        <div className='task_7'>Содержание ответа:
-           <p>Ответ</p>
+        <div className='task_7'>
+            <details>
+                <summary></summary>
+                <span>Ответ</span>
+            </details>
         </div>
     )
 }
