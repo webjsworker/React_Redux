@@ -13,26 +13,37 @@ const Task_7 = (props) => {
 // 	console.log(i++);
 // }, 1000);
 
-  let Handl = () => {
-
-    let timerId = setInterval(function () {
-      let values = props.progress + 10
-      props.setProgerss(values)
-      if (values > 100) {
-      clearTimeout(timerId)
-      }
-
-    }, 1000);
-
+ let timerId=setInterval(function () {
+  let values = props.progress + 1
+  props.setProgerss(values)
+  if (values > 100) {
+  clearTimeout(timerId)
   }
+
+}, 1000);
+
+
+
+  // let Handl = () => {
+
+  //   let timerId = setInterval(function () {
+  //     let values = props.progress + 10
+  //     props.setProgerss(values)
+  //     if (values > 100) {
+  //     clearTimeout(timerId)
+  //     }
+
+  //   }, 1000);
+
+  // }
 
   return (
     <div className='task_7'>
 
       <details>
         <summary>  </summary>
-        <p onMouseOver={Handl}>Навести курсор мыши на строку для начала загррузки </p>
-        <progress max="100" value={props.progress}>
+        {/* <p onMouseOver={Handl}>Навести курсор мыши на строку для начала загррузки </p> */}
+        <progress max="100" value={props.progress} key={props.progress}>
           Загружено на <span id="value">25</span>%
   </progress> <span>{props.progress}</span>
       </details>
@@ -40,24 +51,24 @@ const Task_7 = (props) => {
     </div>
   )
 }
-// export default Task_7;
+export default Task_7;
 
-const mapStatetoProps = store => {
-  return {
-    progress: store.progress,
-  }
-}
+// const mapStatetoProps = store => {
+//   return {
+//     progress: store.progress,
+//   }
+// }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    setProgerss: values => dispatch(setProgerss(values)),
-  }
-}
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     setProgerss: values => dispatch(setProgerss(values)),
+//   }
+// }
 
-export default connect
-  (mapStatetoProps,
-    mapDispatchToProps
-  )(Task_7);
+// export default connect
+//   (mapStatetoProps,
+//     mapDispatchToProps
+//   )(Task_7);
 
 
 
