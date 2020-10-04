@@ -7,6 +7,7 @@ class Task_6 extends React.Component {
         editMode: false,
         status: "hello  world"
     }
+    
     activateEditMode() {
         this.setState({
             editMode: true,

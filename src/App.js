@@ -66,7 +66,10 @@ const App = (props) => {
       status={"Hello"}
       />
       <div><item className='item'>{task_7}</item>{question_7 } </div>
-     <Task_7/>
+     <Task_7
+    //  progress={props.progress}
+    //  setProgerss={props.setProgerss}
+     />
     </div>
 
   )
@@ -87,7 +90,8 @@ const mapStatetoProps = store => {
     text: store.text,
     textwrite: store.textwrite,
     text_store: store.text_store,
-    count_asinc: store.count_asinc
+    count_asinc: store.count_asinc,
+    // progress: store.progress,
     // time_store:store.time_store,
   }
 }
@@ -102,6 +106,7 @@ const mapDispatchToProps = dispatch => {
     setText: text => dispatch(setText(text)),
     setWriteText: write => dispatch(setWriteText(write)),
     setZero: zero => dispatch(setZero(zero)),
+    // setProgerss: value => dispatch(setProgerss(value)),
   }
 }
 export default connect

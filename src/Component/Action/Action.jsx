@@ -5,6 +5,28 @@ export let SET_TIME_REQUEST = 'SET_TIME_REQUEST';
 export let SET_TEXT_REQUEST = 'SET_TEXT_REQUEST'
 export let SET_TEXT_WRITE = 'SET_TEXT_WRITE'
 export let SET_TEXT_ZERO = 'SET_TEXT_ZERO'
+export let SET_PROGRESS = 'SET_PROGRESS'
+
+// export function setProgerss(values) {
+//         return dispatch => {
+//                 dispatch({
+//                         type: SET_PROGRESS,
+//                         payload: values,
+//                 })
+                
+
+//         }
+// }
+
+
+export function setProgerss(values) {
+        
+        return {
+                type: SET_PROGRESS,
+                payload: values,
+        }
+}
+
 
 export function setCount(data) {
         return {
@@ -18,9 +40,9 @@ export function setCount_4(d) {
                 dispatch({
 
                         type: SET_COUNTER_REQUEST,
-                        
+
                 })
-                setTimeout(() => {
+                setInterval(() => {
                         dispatch({
                                 type: SET_COUNTER_SACCESS,
                                 payload: d,

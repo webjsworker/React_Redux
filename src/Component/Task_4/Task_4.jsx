@@ -6,6 +6,9 @@ const Task_4 = (props) => {
         const d = props.count_asinc + 1;
         props.setCount(d)
     }
+    
+    
+    
     return (
         <div className='task_4'>
             

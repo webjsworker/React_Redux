@@ -5,12 +5,13 @@ import {SET_TIME_REQUEST} from '../Action/Action'
 import {SET_TEXT_REQUEST} from '../Action/Action'
 import {SET_TEXT_WRITE} from '../Action/Action'
 import {SET_TEXT_ZERO} from '../Action/Action'
+import {SET_PROGRESS} from '../Action/Action'
 
 
 export const initialeState =
 {
-    // time_store:[], // массив хранения время для сообщений 
-    text_store:[], // массив хранения текстовых сообщений 
+    progress: 10,
+        text_store:[], // массив хранения текстовых сообщений 
     textwrite: '', // переменная содержащая строку отправляемую по нажатию на кнопку 
     text: "", // переменная для хранение вводимых значений в текстовое поле в реальном времени 
     time: '-- -- --',
@@ -45,6 +46,9 @@ export function rootReducer(state = initialeState, action) {
             return { ...state, textwrite: action.payload }
             case SET_TEXT_ZERO:
             return { ...state, text: action.payload }
+          
+            case SET_PROGRESS:
+                return { ...state,  progress: action.payload }
         default:
             return state
                 }
