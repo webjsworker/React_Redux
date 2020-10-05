@@ -20,7 +20,7 @@ export let SET_PROGRESS = 'SET_PROGRESS'
 
 
 export function setProgerss(values) {
-        debugger
+      
         return {
                 type: SET_PROGRESS,
                 payload: values,
@@ -46,7 +46,7 @@ export function setCount_4(count) {
                         
 
                 })
-                setInterval(() => {
+                setTimeout (() => {
                         dispatch({
                                 type: SET_COUNTER_SACCESS,
                                 payload: count,

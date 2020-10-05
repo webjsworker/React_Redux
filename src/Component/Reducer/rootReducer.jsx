@@ -32,7 +32,7 @@ export const initialeState =
 }
 
 export function rootReducer(state = initialeState, action) {
-debugger
+
     switch (action.type) {
 
         case SET_COUNTER:
