@@ -30,24 +30,26 @@ export function setProgerss(values) {
 }
 
 
-export function setCount(data) {
+export function setCount(data,) {
         return {
                 type: SET_COUNTER,
                 payload: data,
+                
         }
 }
 
-export function setCount_4(d) {
+export function setCount_4(count) {
         return dispatch => {
                 dispatch({
 
                         type: SET_COUNTER_REQUEST,
+                        
 
                 })
                 setInterval(() => {
                         dispatch({
                                 type: SET_COUNTER_SACCESS,
-                                payload: d,
+                                payload: count,
                         })
                 }, 2000)
 

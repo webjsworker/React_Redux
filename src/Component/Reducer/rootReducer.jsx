@@ -27,6 +27,7 @@ export const initialeState =
     items: [],
     counter: 0,
     count_asinc: 0,
+    Bt_value: false,
     isFetching: false, // состояние для загрузки прелоудера
 }
 
@@ -35,11 +36,11 @@ debugger
     switch (action.type) {
 
         case SET_COUNTER:
-            return { ...state, counter: action.payload }
+            return { ...state, counter: action.payload, }
         case SET_COUNTER_REQUEST:
-            return { ...state, isFetching: true }
+            return { ...state, isFetching: true, Bt_value: true  }
         case SET_COUNTER_SACCESS:
-            return { ...state, count_asinc: action.payload, isFetching: false }
+            return { ...state, count_asinc: action.payload, isFetching: false, Bt_value: false  }
         case SET_TIME_REQUEST:
             return { ...state, time: action.payload }
         case SET_TEXT_REQUEST:

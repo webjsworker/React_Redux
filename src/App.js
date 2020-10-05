@@ -49,6 +49,7 @@ const App = (props) => {
         setCount={props.setCountAction_4}
         isFetching={props.isFetching}
         count_asinc={props.count_asinc}
+        Bt_value={props.Bt_value}
       />
       <div><span className='item'>{task_5}</span> {question_5}  </div>
       <Task_5
@@ -67,12 +68,12 @@ const App = (props) => {
       status={"Hello"}
       />
       <div><span className='item'>{task_7}</span>{question_7 } </div>
-     {/* <Task_7
+     <Task_7
      progress={props.progress}
      setProgerss={props.setProgerss}
      isProgress={props.isProgress}
      s={props.s}
-     /> */}
+     />
     </div>
 
   )
@@ -94,6 +95,7 @@ const mapStatetoProps = store => {
     textwrite: store.textwrite,
     text_store: store.text_store,
     count_asinc: store.count_asinc,
+    Bt_value: store.Bt_value,
     progress: store.progress,
 
     isProgress: store.isProgress,
