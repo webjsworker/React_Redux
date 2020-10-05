@@ -95,8 +95,10 @@ const mapStatetoProps = store => {
     text_store: store.text_store,
     count_asinc: store.count_asinc,
     progress: store.progress,
+
     isProgress: store.isProgress,
     s:store.s
+
     // time_store:store.time_store,
   }
 }
