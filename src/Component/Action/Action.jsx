@@ -20,10 +20,12 @@ export let SET_PROGRESS = 'SET_PROGRESS'
 
 
 export function setProgerss(values) {
-        
+        debugger
         return {
                 type: SET_PROGRESS,
                 payload: values,
+                
+                
         }
 }
 

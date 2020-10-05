@@ -1,29 +1,38 @@
 import React from 'react'
 import './Task_7.css'
 import { setProgerss } from '../Action/Action'
-import { connect } from 'react-redux'
+
 
 
 
 const Task_7 = (props) => {
   // setInterval(() => console.log( props.progress), 3000)
-// let i = 0;
+  // let i = 0;
 
-// setInterval(function() {
-// 	console.log(i++);
-// }, 1000);
+  // setInterval(function() {
+  // 	console.log(i++);
+  // }, 1000);
 
   let Handl = () => {
+   
+    let iP =props.isProgress
+    if (iP == false) {
+      let timerId = setInterval(function () {
+        debugger
 
-    let timerId = setInterval(function () {
-      let values = props.progress + 10
-      
-      props.setProgerss(values)
-      if (values > 100) {
-      clearTimeout(timerId)
-      }
+        console.log(iP)
+        console.log(props.progress)
+        console.log(timerId)
+        let values = props.progress + 10
+        props.setProgerss(values)
+        if (values > 100) {
+          clearTimeout(timerId)
+        }
 
-    }, 1000);
+      }, 1000);
+
+    }
+
 
   }
 
@@ -36,29 +45,15 @@ const Task_7 = (props) => {
         <progress max="100" value={props.progress}>
           Загружено на <span id="value">25</span>%
   </progress> <span>{props.progress}</span>
+  <span>{props.s}</span>
       </details>
 
     </div>
   )
 }
-// export default Task_7;
 
-const mapStatetoProps = store => {
-  return {
-    progress: store.progress,
-  }
-}
 
-const mapDispatchToProps = dispatch => {
-  return {
-    setProgerss: values => dispatch(setProgerss(values)),
-  }
-}
-
-export default connect
-  (mapStatetoProps,
-    mapDispatchToProps
-  )(Task_7);
+export default Task_7;
 
 
 

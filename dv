@@ -1,0 +1,72 @@
+[33mcommit c7af969608b25fd3956f12f9bf08242a91b1aafd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Alex <webjsworker@gmail.com>
+Date:   Sun Oct 4 15:59:15 2020 +0300
+
+    progress_bar
+
+[33mcommit 0b8b39a3e19422a07b65804ad4d6d5ef5d3b5d92[m
+Author: Alex <webjsworker@gmail.com>
+Date:   Sun Oct 4 09:16:57 2020 +0300
+
+    add
+
+[33mcommit b8d61ffd455c4dc21f80a100f4f42245d7994f81[m
+Author: Alex <webjsworker@gmail.com>
+Date:   Thu Oct 1 23:41:13 2020 +0300
+
+    add task_7
+
+[33mcommit 11bda12945241e04b199e16cfac864ff02b4fbf0[m
+Author: Alex <workerposts@gmail.com>
+Date:   Mon Sep 28 16:11:05 2020 +0300
+
+    edit
+
+[33mcommit a79a95c2417afb16653fdb072af487853562faac[m
+Author: Alex <workerposts@gmail.com>
+Date:   Mon Sep 28 14:52:49 2020 +0300
+
+    update
+
+[33mcommit 973aa3b1c0ba454182c2fa8f368895212e6bbf5a[m
+Merge: 40872f1 1afebfd
+Author: Alex <workerposts@gmail.com>
+Date:   Sun Sep 27 22:52:56 2020 +0300
+
+    Merge branch 'master' of https://github.com/webjsworker/React_Redux into master
+
+[33mcommit 40872f116abc01bb3bd271776923b14b8ae90756[m
+Author: Alex <workerposts@gmail.com>
+Date:   Sun Sep 27 22:49:59 2020 +0300
+
+    edit
+
+[33mcommit 1afebfd2a8ef14a6067a92b9357c55a5aceacf8c[m
+Author: webjsworker <47504749+webjsworker@users.noreply.github.com>
+Date:   Sun Sep 27 22:34:02 2020 +0300
+
+    edit
+    
+    edit
+
+[33mcommit 29ea998c53cfd65129d689b2f008666f69b7898b[m
+Author: webjsworker <47504749+webjsworker@users.noreply.github.com>
+Date:   Sun Sep 27 22:23:14 2020 +0300
+
+    loading
+    
+    loading
+
+[33mcommit 73c46ce2333fbd0b2bae59cbdaa0269c08b13ddf[m
+Author: webjsworker <47504749+webjsworker@users.noreply.github.com>
+Date:   Sun Sep 27 22:22:06 2020 +0300
+
+    loading
+    
+    loading
+
+[33mcommit 3b6bc5b715f2d46f74d3dca697c3f880369ae466[m
+Author: Alex <workerposts@gmail.com>
+Date:   Sun Sep 27 22:19:02 2020 +0300
+
+    load
