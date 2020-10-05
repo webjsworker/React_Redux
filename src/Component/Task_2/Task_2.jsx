@@ -18,12 +18,12 @@ const Task_2 = (props) => {
         <div className='task_2'>
         <details>
     <summary></summary>
-    <p><p>Имя: {props.name}</p>
+    <p>Имя: {props.name}</p>
     <p>Год: {props.year}</p>
     <p>Город: {props.sity}</p>    {/*данные из вложенного обьекта. */}
     <p>Страна: {props.contry}</p> {/*данные из вложенного обьекта. */}
     <p>Массив содержит  {props.namber.length} элементов</p> {/*данные из масива, с применением метода length. */}
-    <p>МАР [1,2,3,4,5] : { mapnamber()}</p> {/*маппинг даных из массива  */}</p>
+    <p>МАР [1,2,3,4,5] :</p> { mapnamber()} {/*маппинг даных из массива  */}
    </details>
 
 

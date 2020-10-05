@@ -14,9 +14,9 @@ const Task_4 = (props) => {
             
             <details>
     <summary></summary>
-    <p><p>Counter = {props.count_asinc} </p>
+    <p>Counter = {props.count_asinc} </p>
             <p> <button onClick={onBtnClick}>Counter</button></p>
-            <p> {props.isFetching ? <p>Загрузка...</p> : <p>Ок</p>} </p></p>
+            {props.isFetching ? <p>Загрузка...</p> : <p>Ок</p>} 
    </details>
             
              

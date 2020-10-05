@@ -38,7 +38,7 @@ const Task_5 = (props) => {
         <div className='task_5'>
             <details>
                 <summary></summary>
-                <p><p><textarea
+                <p><textarea
                     value={text}
                     onChange={handleChange}
                     onKeyPress={handleKeyPress}
@@ -46,7 +46,7 @@ const Task_5 = (props) => {
                 >...</textarea>
                     <button onClick={onBtn} >Send</button>
                 </p>
-                    <p>{message}</p></p>
+                    <p>{message}</p>
             </details>
         </div>
     )

@@ -11,9 +11,11 @@ const Task_1 = (props) => { // props не используется
 
             <details>
                 <summary>  </summary>
-                <p><div className='Button_answer'>
+                <div className='Button_answer'>
+                 <p>{answer_1}</p>   
                 </div>
-                    <p>{answer_1}</p></p>
+                    
+                
             </details>
 
         </div>

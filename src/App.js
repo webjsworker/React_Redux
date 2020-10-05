@@ -27,9 +27,9 @@ const App = (props) => {
   return (
     <div className='App'>
 
-      <div> <item className='item'> {task_1}</item> {question_1} </div>
+      <div> <span className='item'> {task_1}</span> {question_1} </div>
       <Task_1 content={content} />
-      <div><item className='item'> {task_2}</item> {question_2}</div>
+      <div><span className='item'> {task_2}</span> {question_2}</div>
       <Task_2
        content={content}
         name={props.name}
@@ -38,19 +38,19 @@ const App = (props) => {
         contry={props.contry}
         namber={props.namber}
       />
-      <div><item className='item'> {task_3}</item> {question_3} </div>
+      <div><span className='item'> {task_3}</span> {question_3} </div>
       <Task_3
         counter={props.counter}
         setCount={props.setCountAction}
       />
-      <div><item className='item'>{task_4}</item>{question_4}  </div>
+      <div><span className='item'>{task_4}</span>{question_4}  </div>
       <Task_4
         counter={props.counter}
         setCount={props.setCountAction_4}
         isFetching={props.isFetching}
         count_asinc={props.count_asinc}
       />
-      <div><item className='item'>{task_5}</item> {question_5}  </div>
+      <div><span className='item'>{task_5}</span> {question_5}  </div>
       <Task_5
         time={props.time}
         setTime={props.setTime}
@@ -62,17 +62,17 @@ const App = (props) => {
         // time_store={props.time_store}
         setZero={props.setZero}
       />
-      <div> <item className='item'> {task_6}</item> {question_6} </div>
+      <div> <span className='item'> {task_6}</span> {question_6} </div>
       <Task_6
       status={"Hello"}
       />
-      <div><item className='item'>{task_7}</item>{question_7 } </div>
-     <Task_7
+      <div><span className='item'>{task_7}</span>{question_7 } </div>
+     {/* <Task_7
      progress={props.progress}
      setProgerss={props.setProgerss}
      isProgress={props.isProgress}
      s={props.s}
-     />
+     /> */}
     </div>
 
   )
