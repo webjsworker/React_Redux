@@ -6,12 +6,13 @@ import { SET_TEXT_REQUEST } from '../Action/Action'
 import { SET_TEXT_WRITE } from '../Action/Action'
 import { SET_TEXT_ZERO } from '../Action/Action'
 import { SET_PROGRESS } from '../Action/Action'
+import {SET_TIMER} from '../Action/Action'
 
 
 export const initialeState =
 {
-    s: 0 ,
-    progress: 30,
+    timer_progress: 0 ,
+    progress: 0,
     isProgress: false,
     text_store: [], // массив хранения текстовых сообщений 
     textwrite: '', // переменная содержащая строку отправляемую по нажатию на кнопку 
@@ -51,6 +52,8 @@ export function rootReducer(state = initialeState, action) {
             return { ...state, text: action.payload }
         case SET_PROGRESS:
             return { ...state, progress: action.payload, isProgress: false, s : 5 }
+            case SET_TIMER:
+                return { ...state,  timer_progress: action.payload, progress: action.payload}
         default:
             return state
     }

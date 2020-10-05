@@ -6,6 +6,7 @@ export let SET_TEXT_REQUEST = 'SET_TEXT_REQUEST'
 export let SET_TEXT_WRITE = 'SET_TEXT_WRITE'
 export let SET_TEXT_ZERO = 'SET_TEXT_ZERO'
 export let SET_PROGRESS = 'SET_PROGRESS'
+export let SET_TIMER = 'SET_TIMER'
 
 // export function setProgerss(values) {
 //         return dispatch => {
@@ -17,6 +18,17 @@ export let SET_PROGRESS = 'SET_PROGRESS'
 
 //         }
 // }
+
+export function setTimer(time, values) {
+      debugger
+        return {
+                type: SET_TIMER,
+                payload: time,
+               
+                
+                
+        }
+}
 
 
 export function setProgerss(values) {

@@ -19,7 +19,7 @@ import { question_1, task_1, question_2, task_2,
 import Task_6 from './Component/Task_6/Task_6';
 import Task_7 from './Component/Task_7/Task_7'
 import {setProgerss} from './Component/Action/Action'
-
+import {setTimer} from './Component/Action/Action'
 
 
 
@@ -72,7 +72,8 @@ const App = (props) => {
      progress={props.progress}
      setProgerss={props.setProgerss}
      isProgress={props.isProgress}
-     s={props.s}
+     timer_progress={props.timer_progress}
+     setTimer={props.setTimer}
      />
     </div>
 
@@ -99,7 +100,7 @@ const mapStatetoProps = store => {
     progress: store.progress,
 
     isProgress: store.isProgress,
-    s:store.s
+    timer_progress:store.timer_progress
 
     // time_store:store.time_store,
   }
@@ -116,6 +117,10 @@ const mapDispatchToProps = dispatch => {
     setWriteText: write => dispatch(setWriteText(write)),
     setZero: zero => dispatch(setZero(zero)),
     setProgerss: values => dispatch(setProgerss(values)),
+    setTimer: time => dispatch (setTimer(time)),
+    
+
+    
   }
 }
 export default connect
