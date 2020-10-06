@@ -1,9 +1,11 @@
-export let answer_1 = 'Создан компонент Task_1/jsx, использованы  default export/import компонет, подключен файл css.'
-export let content = 'Содержание ответа:'
-export let question_1 = ' Отрисовка собственных компонет, подключение css стилей, import/export'
+export let answer_1 = `Создан компонент Task_1/jsx, 
+ использованы  default export/import компонет, подключен файл css.` 
+export let content = `Содержание ответа:` 
+export let question_1 =`Отрисовка собственных компонет, 
+подключение css стилей, import/export, HOOK useState` 
 export let task_1 = 'текст_задание 1 '
-export let question_2 = 'Инициализаця store, mapStatetoProps прокидывание данных через пропс в компонеты,\
- чтение данных. Получение инициализационных  данных из store через props.  Метод массива МАР  '
+export let question_2 =`Инициализаця store, mapStatetoProps прокидывание данных через пропс в компонеты,
+ чтение данных. Получение инициализационных  данных из store через props.  Метод массива МАР  ` 
 export let task_2 = 'текст_задание 2 '
 export let question_3 = 'Синхронные действия. Dispatch/action, mapDispatchToProps, изменения store. \
 Однонаправленный поток данных  '
