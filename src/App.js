@@ -14,12 +14,13 @@ import { setWriteText } from './Component/Action/Action'
 import { question_1, task_1, question_2, task_2,
    task_3, question_3, task_4, question_4, task_5, 
    question_5,task_6,question_6, task_7, question_7 ,
-   content} from './Component/Answer/answer'
+   content, task_8, question_8} from './Component/Answer/answer'
    import {setZero} from './Component/Action/Action'
 import Task_6 from './Component/Task_6/Task_6';
 import Task_7 from './Component/Task_7/Task_7'
 import {setProgerss} from './Component/Action/Action'
 import {setTimer} from './Component/Action/Action'
+import Task_8 from './Component/Task_8/Task_8'
 
 
 
@@ -75,6 +76,8 @@ const App = (props) => {
      timer_progress={props.timer_progress}
      setTimer={props.setTimer}
      />
+     <div><span className='item'>{task_8}</span>{question_8 } </div>
+     <Task_8/>
     </div>
 
   )
