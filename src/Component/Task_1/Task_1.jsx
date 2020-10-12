@@ -1,21 +1,19 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './Task_1.css'
-// import { answer_1, content } from '../Answer/answer'
+import '../Answer/answer.css'
+import { question_1, task_1, } from '../Answer/answer'
 
 
 const Task_1 = (props) => { // props не используется
     const [count, setCount] = useState(0);
     return (
         <div className='task_1'>
+            <div className='question'> <span className='item'> {task_1}</span> {question_1} </div>
             <details>
                 <summary>  </summary>
-                {/* <div className='Button_answer'> */}
-                                 {/* </div> */}
-                {/* <p>{answer_1}</p>  */}
                 <p>Вы кликнули {count} раз</p>
                 <button onClick={() => setCount(count + 1)}>
-                    Нажми на меня</button>     
-                
+                    Нажми на меня</button>
             </details>
 
         </div>

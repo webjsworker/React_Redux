@@ -1,7 +1,8 @@
 import React from 'react'
 import './Task_5.css'
+import '../Answer/answer.css'
 import { setWriteText } from '../Action/Action'
-
+import { task_5, question_5 } from '../Answer/answer'
 const Task_5 = (props) => {
     let handleKeyPress = (event) => {
         if (event.key == 'Enter') {
@@ -33,9 +34,9 @@ const Task_5 = (props) => {
     let message = props.text_store.map(function (element) {
         return <p>{element}</p>
     });
-
     return (
         <div className='task_5'>
+            <div className='question'><span className='item'>{task_5}</span> {question_5}  </div>
             <details>
                 <summary></summary>
                 <p><textarea
@@ -46,7 +47,7 @@ const Task_5 = (props) => {
                 >...</textarea>
                     <button onClick={onBtn} >Send</button>
                 </p>
-                    <p>{message}</p>
+                <p>{message}</p>
             </details>
         </div>
     )
