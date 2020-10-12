@@ -1,22 +1,18 @@
 import React from 'react';
 import './App.css';
 import Task_1 from './Component/Task_1/Task_1';
+// import Task_1 from './Component/Import_App'
 import Task_2 from './Component/Task_2/Task_2';
 import { connect } from 'react-redux'
 import Task_3 from './Component/Task_3/Task_3';
-import { setCount } from './Component/Action/Action'
+import { setCount, setCount_4, setTime,
+  setText, setWriteText, setZero, setProgerss,
+  setTimer} from './Component/Action/Action'
 import Task_4 from './Component/Task_4/Task_4';
-import { setCount_4 } from './Component/Action/Action'
 import Task_5 from './Component/Task_5/Task_5';
-import { setTime } from './Component/Action/Action'
-import { setText } from './Component/Action/Action'
-import { setWriteText } from './Component/Action/Action'
-import {content} from './Component/Answer/answer'
-   import {setZero} from './Component/Action/Action'
+import { content } from './Component/Answer/answer'
 import Task_6 from './Component/Task_6/Task_6';
 import Task_7 from './Component/Task_7/Task_7'
-import {setProgerss} from './Component/Action/Action'
-import {setTimer} from './Component/Action/Action'
 import Task_8 from './Component/Task_8/Task_8'
 
 
@@ -26,7 +22,7 @@ const App = (props) => {
     <div className='App'>
       <Task_1 content={content} />
       <Task_2
-       content={content}
+        content={content}
         name={props.name}
         year={props.year}
         sity={props.sity}
@@ -37,7 +33,7 @@ const App = (props) => {
         counter={props.counter}
         setCount={props.setCountAction}
       />
-      
+
       <Task_4
         counter={props.counter}
         setCount={props.setCountAction_4}
@@ -45,7 +41,7 @@ const App = (props) => {
         count_asinc={props.count_asinc}
         Bt_value={props.Bt_value}
       />
-     
+
       <Task_5
         time={props.time}
         setTime={props.setTime}
@@ -57,20 +53,20 @@ const App = (props) => {
         // time_store={props.time_store}
         setZero={props.setZero}
       />
-      
+
       <Task_6
-      status={"Hello"}
+        status={"Hello"}
       />
-     
-     <Task_7
-     progress={props.progress}
-     setProgerss={props.setProgerss}
-     isProgress={props.isProgress}
-     timer_progress={props.timer_progress}
-     setTimer={props.setTimer}
-     />
-     
-     <Task_8/>
+
+      <Task_7
+        progress={props.progress}
+        setProgerss={props.setProgerss}
+        isProgress={props.isProgress}
+        timer_progress={props.timer_progress}
+        setTimer={props.setTimer}
+      />
+
+      <Task_8 />
     </div>
 
   )
@@ -96,7 +92,7 @@ const mapStatetoProps = store => {
     progress: store.progress,
 
     isProgress: store.isProgress,
-    timer_progress:store.timer_progress
+    timer_progress: store.timer_progress
 
     // time_store:store.time_store,
   }
@@ -113,10 +109,10 @@ const mapDispatchToProps = dispatch => {
     setWriteText: write => dispatch(setWriteText(write)),
     setZero: zero => dispatch(setZero(zero)),
     setProgerss: values => dispatch(setProgerss(values)),
-    setTimer: time => dispatch (setTimer(time)),
-    
+    setTimer: time => dispatch(setTimer(time)),
 
-    
+
+
   }
 }
 export default connect
