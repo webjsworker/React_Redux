@@ -21,4 +21,6 @@ export let question_6 =`Локальный State, class component, setState. `
 export let task_7 =`текст_задание 7`
 export let question_7 =`prograss bar ` 
 export let task_8 =`текст_задание 8`
-export let question_8 =`--------`
+export let question_8 =`Замена надписи внутри кнопки `
+export let task_9 =`текст_задание 9`
+export let question_9 =`-------- `

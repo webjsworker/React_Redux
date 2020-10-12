@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {
   Task_1, Task_2, Task_3, Task_4, Task_5, Task_6,
-  Task_7, Task_8
+  Task_7, Task_8, Task_9
 } from './Component/Import_App'
 import { connect } from 'react-redux'
 import {
@@ -65,6 +65,7 @@ const App = (props) => {
       />
 
       <Task_8 />
+      <Task_9/>
     </div>
 
   )
