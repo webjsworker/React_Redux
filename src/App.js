@@ -1,19 +1,17 @@
 import React from 'react';
 import './App.css';
-import Task_1 from './Component/Task_1/Task_1';
-// import Task_1 from './Component/Import_App'
-import Task_2 from './Component/Task_2/Task_2';
+import {
+  Task_1, Task_2, Task_3, Task_4, Task_5, Task_6,
+  Task_7, Task_8
+} from './Component/Import_App'
 import { connect } from 'react-redux'
-import Task_3 from './Component/Task_3/Task_3';
-import { setCount, setCount_4, setTime,
+import {
+  setCount, setCount_4, setTime,
   setText, setWriteText, setZero, setProgerss,
-  setTimer} from './Component/Action/Action'
-import Task_4 from './Component/Task_4/Task_4';
-import Task_5 from './Component/Task_5/Task_5';
+  setTimer
+} from './Component/Action/Action'
 import { content } from './Component/Answer/answer'
-import Task_6 from './Component/Task_6/Task_6';
-import Task_7 from './Component/Task_7/Task_7'
-import Task_8 from './Component/Task_8/Task_8'
+
 
 
 

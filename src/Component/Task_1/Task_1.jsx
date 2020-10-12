@@ -4,7 +4,7 @@ import '../Answer/answer.css'
 import { question_1, task_1, } from '../Answer/answer'
 
 
-const Task_1 = (props) => { // props не используется
+const Task_1 = (props) => { 
     const [count, setCount] = useState(0);
     return (
         <div className='task_1'>
