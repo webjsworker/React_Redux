@@ -1,5 +1,7 @@
 import React from 'react'
 import './Task_2.css'
+import '../Answer/answer.css'
+import { question_2, task_2} from '../Answer/answer'
 
 
 
@@ -16,6 +18,7 @@ const Task_2 = (props) => {
     }
     return (
         <div className='task_2'>
+            <div className='question'><span className='item'> {task_2}</span> {question_2}</div>
             <details>
                 <summary></summary>
                 <p>Имя: {props.name}</p>

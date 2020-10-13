@@ -1,5 +1,7 @@
-.App {
+/* .App {
   background-color: antiquewhite;
+
+} */
   /* display: grid;
   grid-template-areas: 
   "h h"
@@ -7,7 +9,6 @@
  grid-template-rows: 60px 1fr;
  grid-template-columns: 2fr 10fr;
  grid-gap: 5px; */
-}
 /* .header{
   grid-area: h;
 }
@@ -18,11 +19,7 @@
   grid-area: d;
 } */
 
-.item{
-  background-color: rgb(199, 166, 122);
-  font-weight: bold;
-  
-}
+
 
 
 

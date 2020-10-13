@@ -1,6 +1,5 @@
 export let answer_1 = `Создан компонент Task_1/jsx, 
  использованы  default export/import компонет, подключен файл css.` 
-export let content = `Содержание ответа:` 
 export let question_1 =`Отрисовка собственных компонет, 
 подключение css стилей, import/export, HOOK useState` 
 export let task_1 = 'текст_задание 1 '
@@ -21,4 +20,6 @@ export let question_6 =`Локальный State, class component, setState. `
 export let task_7 =`текст_задание 7`
 export let question_7 =`prograss bar ` 
 export let task_8 =`текст_задание 8`
-export let question_8 =`--------`
+export let question_8 =`Замена надписи внутри кнопки `
+export let task_9 =`текст_задание 9`
+export let question_9 =`-------- `
