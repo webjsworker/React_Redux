@@ -1,6 +1,5 @@
 export let answer_1 = `Создан компонент Task_1/jsx, 
  использованы  default export/import компонет, подключен файл css.` 
-export let content = `Содержание ответа:` 
 export let question_1 =`Отрисовка собственных компонет, 
 подключение css стилей, import/export, HOOK useState` 
 export let task_1 = 'текст_задание 1 '

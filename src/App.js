@@ -1,26 +1,22 @@
 import React from 'react';
+import { connect } from 'react-redux'
 import './App.css';
 import {
   Task_1, Task_2, Task_3, Task_4, Task_5, Task_6,
   Task_7, Task_8, Task_9
 } from './Component/Import_App'
-import { connect } from 'react-redux'
 import {
   setCount, setCount_4, setTime,
   setText, setWriteText, setZero, setProgerss,
   setTimer
 } from './Component/Action/Action'
-import { content } from './Component/Answer/answer'
-
-
 
 
 const App = (props) => {
   return (
     <div className='App'>
-      <Task_1 content={content} />
+      <Task_1 />
       <Task_2
-        content={content}
         name={props.name}
         year={props.year}
         sity={props.sity}
@@ -31,7 +27,6 @@ const App = (props) => {
         counter={props.counter}
         setCount={props.setCountAction}
       />
-
       <Task_4
         counter={props.counter}
         setCount={props.setCountAction_4}
@@ -39,7 +34,6 @@ const App = (props) => {
         count_asinc={props.count_asinc}
         Bt_value={props.Bt_value}
       />
-
       <Task_5
         time={props.time}
         setTime={props.setTime}
@@ -51,11 +45,7 @@ const App = (props) => {
         // time_store={props.time_store}
         setZero={props.setZero}
       />
-
-      <Task_6
-        status={"Hello"}
-      />
-
+      <Task_6/>
       <Task_7
         progress={props.progress}
         setProgerss={props.setProgerss}
@@ -63,9 +53,8 @@ const App = (props) => {
         timer_progress={props.timer_progress}
         setTimer={props.setTimer}
       />
-
       <Task_8 />
-      <Task_9/>
+      <Task_9 />
     </div>
 
   )

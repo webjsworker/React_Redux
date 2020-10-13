@@ -15,7 +15,6 @@ const Task_1 = (props) => {
                 <button onClick={() => setCount(count + 1)}>
                     Нажми на меня</button>
             </details>
-
         </div>
     )
 }
