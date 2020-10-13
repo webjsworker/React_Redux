@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-<<<<<<< HEAD
+
 import './App.css';
 import {
   Task_1, Task_2, Task_3, Task_4, Task_5, Task_6,
@@ -11,34 +11,16 @@ import {
   setText, setWriteText, setZero, setProgerss,
   setTimer
 } from './Component/Action/Action'
-=======
-import Task_3 from './Component/Task_3/Task_3';
-import { setCount } from './Component/Action/Action'
-import Task_4 from './Component/Task_4/Task_4';
-import { setCount_4 } from './Component/Action/Action'
-import Task_5 from './Component/Task_5/Task_5';
-import { setTime } from './Component/Action/Action'
-import { setText } from './Component/Action/Action'
-import { setWriteText } from './Component/Action/Action'
-import {content} from './Component/Answer/answer'
-   import {setZero} from './Component/Action/Action'
-import Task_6 from './Component/Task_6/Task_6';
-import Task_7 from './Component/Task_7/Task_7'
-import {setProgerss} from './Component/Action/Action'
-import {setTimer} from './Component/Action/Action'
-import Task_8 from './Component/Task_8/Task_8'
 
->>>>>>> 4180fba552cd7e7d05ef610ee1732df9ebc1f8ce
 
 
 const App = (props) => {
   return (
     <div className='App'>
-<<<<<<< HEAD
+
       <Task_1 />
-=======
-      <Task_1 content={content} />
->>>>>>> 4180fba552cd7e7d05ef610ee1732df9ebc1f8ce
+
+
       <Task_2
         name={props.name}
         year={props.year}
@@ -50,10 +32,8 @@ const App = (props) => {
         counter={props.counter}
         setCount={props.setCountAction}
       />
-<<<<<<< HEAD
-=======
-      
->>>>>>> 4180fba552cd7e7d05ef610ee1732df9ebc1f8ce
+
+
       <Task_4
         counter={props.counter}
         setCount={props.setCountAction_4}
@@ -61,10 +41,8 @@ const App = (props) => {
         count_asinc={props.count_asinc}
         Bt_value={props.Bt_value}
       />
-<<<<<<< HEAD
-=======
-     
->>>>>>> 4180fba552cd7e7d05ef610ee1732df9ebc1f8ce
+
+
       <Task_5
         time={props.time}
         setTime={props.setTime}
@@ -76,7 +54,7 @@ const App = (props) => {
         // time_store={props.time_store}
         setZero={props.setZero}
       />
-<<<<<<< HEAD
+
       <Task_6/>
       <Task_7
         progress={props.progress}
@@ -87,22 +65,7 @@ const App = (props) => {
       />
       <Task_8 />
       <Task_9 />
-=======
-      
-      <Task_6
-      status={"Hello"}
-      />
-     
-     <Task_7
-     progress={props.progress}
-     setProgerss={props.setProgerss}
-     isProgress={props.isProgress}
-     timer_progress={props.timer_progress}
-     setTimer={props.setTimer}
-     />
-     
-     <Task_8/>
->>>>>>> 4180fba552cd7e7d05ef610ee1732df9ebc1f8ce
+
     </div>
 
   )
