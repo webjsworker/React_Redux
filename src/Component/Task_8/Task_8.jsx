@@ -3,6 +3,7 @@ import './Task_8.css'
 import '../Answer/answer.css'
 import { task_8, question_8 } from '../Answer/answer'
 
+<<<<<<< HEAD
 class Task_8 extends React.Component {
 
     state = {
@@ -40,6 +41,16 @@ class Task_8 extends React.Component {
             </div>
         )
     }
+=======
+const Task_8 = (props) => {
+    return (
+        <div className='task_8'>
+            <div className='question'><span className='item'>{task_8}</span>{question_8} </div>
+            <details>
+                <summary>  </summary>
+                <p>ОТвет</p>
+            </details>
+>>>>>>> 4180fba552cd7e7d05ef610ee1732df9ebc1f8ce
 
 }
 export default Task_8;
