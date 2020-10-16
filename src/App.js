@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
+
 import './App.css';
 import {
   Task_1, Task_2, Task_3, Task_4, Task_5, Task_6,
@@ -10,6 +11,7 @@ import {
   setText, setWriteText, setZero, setProgerss,
   setTimer
 } from './Component/Action/Action'
+
 
 
 const App = (props) => {

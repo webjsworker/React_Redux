@@ -3,6 +3,7 @@ import './Task_8.css'
 import '../Answer/answer.css'
 import { task_8, question_8 } from '../Answer/answer'
 
+
 class Task_8 extends React.Component {
 
     state = {
@@ -40,6 +41,7 @@ class Task_8 extends React.Component {
             </div>
         )
     }
+
 
 }
 export default Task_8;
